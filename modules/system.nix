@@ -6,10 +6,9 @@
   # boot.loader.efi.canTouchEfiVariables = true;
 
 
-  # VM bootloader configuration (Legacy BIOS)
+  # ! VM bootloader configuration (Legacy BIOS)
   # Use GRUB for Legacy BIOS instead
-  boot.loader.grub.enable = true;
-  
+  boot.loader.grub.enable = true;  
   # Set this to your VM's main drive. 
   # It is usually "/dev/vda" (for KVM/QEMU) or "/dev/sda" (for VirtualBox/VMware).
   # You can run `lsblk` in the terminal to check the name of your disk.
