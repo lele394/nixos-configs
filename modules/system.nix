@@ -45,7 +45,7 @@
     layout = "fr";
     variant = "";
   };
-  # DWL fallback
+  # Console layout fallback
   environment.sessionVariables = {
     XKB_DEFAULT_LAYOUT = "fr";
   };

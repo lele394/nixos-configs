@@ -1,11 +1,12 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ./desktop/sway.nix
+  ];
+
   # Ly Display Manager
   services.displayManager.ly.enable = true;
-
-  # DWL (Wayland Window Manager)
-  programs.dwl.enable = true;
 
   # Thunar File Manager (Requires extra services to behave normally)
   programs.thunar.enable = true;
@@ -23,4 +24,5 @@
     noto-fonts-color-emoji
     nerd-fonts.fira-code # Monospace font for Kitty/Coding
   ];
+
 }

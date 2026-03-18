@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ./configs/kitty.nix
+  ];
+
   environment.systemPackages = with pkgs;[
     # --- Requested Software ---
     nano
@@ -8,14 +12,21 @@
     firefox
     kitty
 
-    # --- DWL Failsafes ---
-    foot          # DWL default terminal (Super+Enter)
-    wmenu        # DWL default launcher (Super+P)
+    # --- Wayland Core Tools ---
+    foot          # Wayland terminal
+    wmenu         # Wayland launcher
+    swaylock-effects      # Wayland screen locker
     
     # --- Wayland Essentials ---
     wl-clipboard  # Enables copy/pasting in Wayland
-    waybar        # Lightweight status bar
+    i3status      # Status generator for swaybar
     swaybg        # Utility to set desktop wallpapers
+
+    # --- Wayland Screenshot/Recording Tools ---
+    zenity        # GTK dialog chooser (Screenshot/Record)
+    grim          # Screenshot tool for Wayland
+    slurp         # Region selector for Wayland
+    wf-recorder   # Screen recorder for Wayland
     
     # --- Laptop Hardware Controls ---
     brightnessctl # Command-line screen brightness control
@@ -32,5 +43,10 @@
     git           # Essential for tracking your NixOS config changes
     wget
     btop          # System resource monitor
+
+    # --- Video player, PDF viewer, and image viewer ---
+    vlc           # Video player
+    zathura       # PDF viewer
+    sxiv          # Simple X Image Viewer
   ];
 }
