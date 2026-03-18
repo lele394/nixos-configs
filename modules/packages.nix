@@ -14,7 +14,7 @@
 
     # --- Wayland Core Tools ---
     foot          # Wayland terminal
-    wmenu         # Wayland launcher
+    wofi          # Wayland launcher
     hyprlock      # Wayland screen locker
     
     # --- Wayland Essentials ---

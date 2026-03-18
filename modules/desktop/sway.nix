@@ -17,6 +17,11 @@
     bindsym Ctrl+Alt+t exec kitty
   '';
 
+  environment.etc."sway/config.d/90-launcher.conf".text = ''
+    unbindsym $mod+d
+    bindsym $mod+d exec wofi --show drun
+  '';
+
   environment.etc."sway/config.d/90-lock.conf".text = ''
     unbindsym $mod+l
     bindsym $mod+l exec hyprlock
