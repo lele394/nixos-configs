@@ -15,7 +15,7 @@
     # --- Wayland Core Tools ---
     foot          # Wayland terminal
     wmenu         # Wayland launcher
-    swaylock-effects      # Wayland screen locker
+    hyprlock      # Wayland screen locker
     
     # --- Wayland Essentials ---
     wl-clipboard  # Enables copy/pasting in Wayland
@@ -43,6 +43,7 @@
     git           # Essential for tracking your NixOS config changes
     wget
     btop          # System resource monitor
+    fzf
 
     # --- Video player, PDF viewer, and image viewer ---
     vlc           # Video player

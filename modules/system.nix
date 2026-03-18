@@ -32,6 +32,8 @@
     pulse.enable = true;
   };
 
+  security.pam.services.hyprlock = {};
+
   # Laptop Power Management
   services.upower.enable = true;
   services.power-profiles-daemon.enable = true;
