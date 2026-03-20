@@ -3,6 +3,7 @@
 {
   imports = [
     ./desktop/sway.nix
+    ./desktop/wofi/powermenu.nix
   ];
 
   # Ly Display Manager

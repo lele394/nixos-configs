@@ -19,7 +19,7 @@
     
     # --- Wayland Essentials ---
     wl-clipboard  # Enables copy/pasting in Wayland
-    i3status      # Status generator for swaybar
+    waybar        # Status bar for Sway/Wayland
     swaybg        # Utility to set desktop wallpapers
 
     # --- Wayland Screenshot/Recording Tools ---
@@ -27,7 +27,7 @@
     grim          # Screenshot tool for Wayland
     slurp         # Region selector for Wayland
     wf-recorder   # Screen recorder for Wayland
-    
+
     # --- Laptop Hardware Controls ---
     brightnessctl # Command-line screen brightness control
     pavucontrol   # GUI application for managing audio volume
@@ -38,10 +38,12 @@
     xarchiver     # Backend needed for Thunar to extract/create archives
     unzip
     zip
+    bat
     
     # --- Basic System Utilities ---
     git           # Essential for tracking your NixOS config changes
     wget
+    jq
     btop          # System resource monitor
     fzf
 
@@ -49,5 +51,22 @@
     vlc           # Video player
     zathura       # PDF viewer
     sxiv          # Simple X Image Viewer
+
+    # --- Compilers and Runtimes ---
+    # nodejs        # JavaScript runtime
+    # rustc         # Rust compiler
+    # cargo         # Rust package manager
+    # python3       # Python 3 interpreter
+    # python3Packages.pip # Python package manager
+    # fortran        # Fortran compiler
+    # gcc             # C/C++ compiler
+    # nvc             # NVIDIA Fortran Compiler
+
+
+    # --- Development Tools ---
+    code           # Visual Studio Code
+
+    # --- nice to have ---
+    # ...
   ];
 }
