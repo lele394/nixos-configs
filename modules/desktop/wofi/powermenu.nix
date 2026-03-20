@@ -11,6 +11,8 @@
     insensitive=true
     matching=fuzzy
     prompt=Search
+    allow_images=true
+    image_size=32
   '';
 
   environment.etc."wofi/style.css".text = ''
@@ -60,7 +62,9 @@
     #text {
       color: inherit;
     }
-  '';
+    #img {
+      margin-right: 8px;
+    }  '';
 
   environment.etc."xdg/wofi/config".text = ''
     style=/etc/wofi/style.css
@@ -72,6 +76,8 @@
     insensitive=true
     matching=fuzzy
     prompt=Search
+    allow_images=true
+    image_size=32
   '';
 
   environment.etc."xdg/wofi/style.css".text = ''
@@ -120,6 +126,10 @@
 
     #text {
       color: inherit;
+    }
+
+    #img {
+      margin-right: 8px;
     }
   '';
 

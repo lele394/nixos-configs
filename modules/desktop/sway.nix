@@ -23,7 +23,7 @@
 
   environment.etc."sway/config.d/90-launcher.conf".text = ''
     unbindsym $mod+d
-    bindsym $mod+d exec wofi --conf /etc/wofi/config --style /etc/wofi/style.css --show drun
+    bindsym $mod+d exec wofi --conf /etc/wofi/config --style /etc/wofi/style.css --allow-images --show drun
   '';
 
   environment.etc."sway/config.d/90-wofi-menus.conf".text = ''
